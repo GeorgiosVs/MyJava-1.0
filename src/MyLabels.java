@@ -26,7 +26,9 @@ public class MyLabels extends JLabel {
         this.setIconTextGap(0);
         setIconFromResource();
         this.setHorizontalTextPosition(JLabel.CENTER);
-        this.setVerticalTextPosition(JLabel.BOTTOM);
+        this.setVerticalTextPosition(JLabel.TOP);
+        this.setVerticalAlignment(JLabel.CENTER);
+        this.setHorizontalAlignment(JLabel.CENTER);
     }
 
     private Font createFont(Font fallbackFont) {
