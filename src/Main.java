@@ -8,11 +8,10 @@ public class Main {
 
         myFrame.setLayout(new FlowLayout());
 
-        myFrame.add(myLabels);
-
         myFrame.revalidate();
-
+        myFrame.add(myLabels);
         myFrame.repaint();
+        myFrame.pack();
 
         myFrame.setVisible(true);
     }

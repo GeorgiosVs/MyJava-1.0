@@ -4,7 +4,6 @@ import java.util.Objects;
 
 public class MyFrame extends JFrame {
     public MyFrame() {
-        this.setSize(1200, 720);
         this.setTitle("GeorgiosVs. Airport Terminal");
         this.setResizable(true);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
