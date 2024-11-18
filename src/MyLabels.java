@@ -21,7 +21,7 @@ public class MyLabels extends JLabel {
 
     private void initialize() {
         this.setForeground(DEFAULT_COLOR);
-        Font font = createFont(FALLBACK_FONT);
+        Font font = createFont();
         this.setFont(font);
         this.setIconTextGap(0);
         setIconFromResource();
@@ -31,10 +31,10 @@ public class MyLabels extends JLabel {
         this.setHorizontalAlignment(JLabel.CENTER);
     }
 
-    private Font createFont(Font fallbackFont) {
+    private Font createFont() {
         Font font = new Font(FONT_NAME, Font.PLAIN, 20);
         if (!fontAvailable(FONT_NAME)) {
-            font = fallbackFont;
+            font = FALLBACK_FONT;
         }
         return font;
     }
